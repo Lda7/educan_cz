@@ -200,6 +200,9 @@ a:hover {
 
 .hero-right {
   grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .hero-image-wrap {
@@ -339,7 +342,7 @@ a:hover {
 
 /* Hero banner – large rounded gradient card */
 .hero-banner-wrap {
-  margin-top: calc(-1 * var(--space-2xl));
+  margin-top: var(--space-2xl);
   position: relative;
   z-index: 2;
 }
@@ -430,6 +433,7 @@ a:hover {
 .btn-hero-cta {
   width: 100%;
   max-width: 280px;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
